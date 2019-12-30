@@ -6,6 +6,7 @@ val pureConfigVersion = "0.12.2"
 val fs2Version = "2.1.0"
 val scalaUriVersion = "1.5.1"
 val parboiledVersion = "2.1.8"
+val scalaTestVersion = "3.0.8"
 
 lazy val root = project
   .in(file("."))
@@ -17,6 +18,7 @@ lazy val root = project
       "org.typelevel" %% "cats-core" % catsVersion,
       "io.lemonlabs" %% "scala-uri" % scalaUriVersion,
       "org.parboiled" %% "parboiled" % parboiledVersion,
+      "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
     ),
     scalacOptions ++= Seq(
       "-deprecation",                      // Emit warning and location for usages of deprecated APIs.
