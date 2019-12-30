@@ -6,7 +6,7 @@ val pureConfigVersion = "0.12.2"
 val fs2Version = "2.1.0"
 val scalaUriVersion = "1.5.1"
 val parboiledVersion = "2.1.8"
-val scalaTestVersion = "3.0.8"
+val scalaTestVersion = "3.1.0"
 
 lazy val root = project
   .in(file("."))
