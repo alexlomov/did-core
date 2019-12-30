@@ -1,11 +1,12 @@
 package usafe.digital.did
 
 import cats.data.NonEmptyList
-import org.scalatest.{FunSpecLike, Matchers}
+import org.scalatest.funspec.AnyFunSpecLike
+import org.scalatest.matchers.should.Matchers
 import usafe.digital.did.parser.parse
 import usafe.digital.did.types._
 
-class DidParserSuite extends FunSpecLike with Matchers {
+class DidParserSuite extends AnyFunSpecLike with Matchers {
 
   describe("DID parser") {
     it("parses a valid DID with a method name and a method specific ID") {
