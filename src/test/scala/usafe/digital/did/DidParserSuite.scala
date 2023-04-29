@@ -4,14 +4,13 @@ import cats.data.NonEmptyList
 import org.scalatest.funspec.AnyFunSpecLike
 import org.scalatest.matchers.should.Matchers
 import usafe.digital.did.parser.parse
-import usafe.digital.did.types._
+import usafe.digital.did.types.*
 
-class DidParserSuite extends AnyFunSpecLike with Matchers {
+class DidParserSuite extends AnyFunSpecLike with Matchers:
 
   describe("DID parser") {
     it("parses a valid DID with a method name and a method specific ID") {
       val raw = RawDid("did:test:very-basic")
-
       parse(raw) shouldBe Right(Did(MethodName("test"), MethodSpecificId("very-basic")))
     }
 
@@ -100,4 +99,4 @@ class DidParserSuite extends AnyFunSpecLike with Matchers {
     }
   }
 
-}
+
